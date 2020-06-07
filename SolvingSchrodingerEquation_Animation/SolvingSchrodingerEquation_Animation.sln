@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SolvingSchrodingerEquation_Animation", "SolvingSchrodingerEquation_Animation.pyproj", "{23009EE9-9235-4734-9955-D29C1E8D1B25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23009EE9-9235-4734-9955-D29C1E8D1B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23009EE9-9235-4734-9955-D29C1E8D1B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {822B98BF-A3FB-45E4-8C80-E25E7D9275E8}
+	EndGlobalSection
+EndGlobal
