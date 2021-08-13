@@ -72,7 +72,7 @@ fig_sum_of_waveform = px.line(
     df, 
     x="Time", 
     y="sum_of_waveform", 
-    title='Sum of 4Hz, 7Hz, and 9Hz Waveforms as Input into FFT',
+    title='Sum of 4Hz, 7Hz, and 9Hz Waveforms as Input into FFT Function',
     labels={
         'Time':'Time period',
         'sum_of_waveform':'Amplitude'
@@ -101,11 +101,11 @@ arrFreq = np.array([FFT_df["frequencies"], FFT_df["realFourierTransform"]])
 
 #print(f'dim={dim}, totalElements={totalElements}')
 
-print(f'Found the following fequencies after transformation: ')
+# print(f'Found the following fequencies after transformation: ')
 str = 'Detected the following fequencies in frequency domain:'
 for i, j in np.argwhere(arrFreq > 0.495):
     if i > 0:
-        print(f'{j/endTime} Hz ') # since time period = (start, end), and freq is recipical of time ---> 1/t
+        # print(f'{j/endTime} Hz ') # since time period = (start, end), and freq is recipical of time ---> 1/t
         str +=  f' {j/endTime} Hz,'
 
 str = str[:-1]
