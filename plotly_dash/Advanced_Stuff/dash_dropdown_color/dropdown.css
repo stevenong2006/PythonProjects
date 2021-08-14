@@ -1,0 +1,47 @@
+.Select--multi .Select-value {
+    background-color: green;
+    border-color: #e3a700;
+    color: orange;
+}
+
+.Select-control {
+    background-color: #222 !important;
+    color: white;
+}
+
+.Select.is-focused > .Select-control {
+    background-color: #222;
+}
+
+#school-input {
+    color: white;
+    background-color: #222;
+    /* color: yellow;  */
+}
+
+.Select-value-label {
+    /* color: white; */
+    color: yellow;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.VirtualizedSelectOption {
+    background-color: #222;
+    color: white;
+ }
+
+.VirtualizedSelectFocusedOption {
+    background-color: #222;
+    color: white;
+    /* opacity: .7; */
+}
+
+.Select.is-focused:not(.is-open) > .Select-control {
+    background-color: #222;
+    border-color: var(--primary); 
+    box-shadow: none;
+}
