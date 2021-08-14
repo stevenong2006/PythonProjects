@@ -2,23 +2,45 @@ import dash
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
+def make_button_style(
+    background_color=None,
+    color=None,
+    height=None,               
+    width=None,               
+    margin_top=None,               
+    margin_left=None
+):
+
+# white_button_style = {'background-color': 'white',
+#                       'color': 'black',
+#                       'height': '50px',
+#                       'width': '100px',
+#                       'margin-top': '10px',
+#                       'margin-left': '10px'}
+
+# red_button_style = {'background-color': 'red',
+#                     'color': 'white',
+#                     'height': '50px',
+#                     'width': '100px',
+#                     'margin-top': '10px',
+#                     'margin-left': '10px'}
+
+    button_style = dict()
+    button_style['background-color'] = background_color               
+    button_style['color'] = color               
+    button_style['height'] = height               
+    button_style['width'] = width               
+    button_style['margin-top'] = margin_top               
+    button_style['margin-left'] = margin_left
+
+    return button_style
+
 MACHINE_ON = True
 
 app = dash.Dash(__name__)
 
-white_button_style = {'background-color': 'white',
-                      'color': 'black',
-                      'height': '50px',
-                      'width': '100px',
-                      'margin-top': '10px',
-                      'margin-left': '10px'}
-
-red_button_style = {'background-color': 'red',
-                    'color': 'white',
-                    'height': '50px',
-                    'width': '100px',
-                    'margin-top': '10px',
-                    'margin-left': '10px'}
+white_button_style = make_button_style('white', 'black', '50px', '100px', '10px', '10px')
+red_button_style = make_button_style('red', 'white', '50px', '100px', '10px', '10px')
 
 app.layout = html.Div([
     html.H2(id='machine_status',
@@ -31,6 +53,8 @@ app.layout = html.Div([
     )
 
 ])
+
+
 
 @app.callback([
     Output('button', 'style'),
